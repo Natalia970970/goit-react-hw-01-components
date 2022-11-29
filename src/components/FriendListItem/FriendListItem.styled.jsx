@@ -14,17 +14,10 @@ export const FriendCard = styled.li`
     margin-bottom: 20px;
 `;
 
-export const Online = styled.span`
+export const OnlineStatus = styled.span`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: limegreen;
-    margin-left: 10px;
-`;
-export const Offline = styled.span`
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: tomato;
+    background-color:${props => (props.isOnline ? 'lightgreen' : 'tomato')};
     margin-left: 10px;
 `;
